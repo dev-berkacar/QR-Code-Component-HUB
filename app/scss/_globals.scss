@@ -1,0 +1,21 @@
+@import "mixins";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+div {
+  @include Desktop(){
+    font-size: 200%;
+  }
+  @include Tablet(){
+    font-size: 100%;
+  }
+  @include Mobile(){
+    font-size: 50%;
+  }
+}
