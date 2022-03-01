@@ -1,0 +1,38 @@
+.card {
+  width: 20em;
+  height: 31.0625em;
+  border-radius: 1.25rem;
+  box-shadow: 0px 1.5625rem 1.5625rem rgba(0, 0, 0, 0.0476518);
+  background-color: $white;
+
+  &__components {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 0 1rem;
+
+    &__image {
+      width: 18em;
+      height: 18em;
+      border-radius: 0.625rem;
+    }
+
+    &__qr-description {
+      padding-top: 1.5rem;
+
+      h2 {
+        color: $darkBlue;
+        font-weight: bold;
+        font-size: $font-md;
+        text-align: center;
+      }
+      
+      h3 {
+        color: $grayishBlue;
+        font-weight: normal;
+        font-size: $font-sm;
+        text-align: center;
+        padding-top: 1rem;
+      }
+    }
+  }  
+}

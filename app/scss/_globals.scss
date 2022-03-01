@@ -1,21 +1,24 @@
 @import "mixins";
+@import "variables";
 
 html {
-  font-size: 100%;
+  height: 100%;
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  background-color: $lightGray;
+}
+
+body, html {
   font-family: "Outfit", sans-serif;
 }
 
-div {
-  @include Desktop(){
-    font-size: 200%;
-  }
-  @include Tablet(){
-    font-size: 100%;
-  }
-  @include Mobile(){
-    font-size: 50%;
-  }
+h2, h3 {
+  padding: 0;
+  margin: 0;    
 }
+
